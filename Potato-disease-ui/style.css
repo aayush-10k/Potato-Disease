@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.background {
+  background: url('farm.jpg') center/cover no-repeat;
+  filter: blur(6px) brightness(0.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: url("background.jpg");
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  opacity: 0.5;
+}
+
+.upload-box {
+  border: 2px dashed #ccc;
+  border-radius: 16px;
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 320px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #555;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.upload-box:hover {
+  border-color: #4caf50;
+  color: #4caf50;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.95);
+  width: 300px;
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.hidden {
+  display: none;
+}
+
+.leaf-img {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.info {
+  text-align: left;
+  margin-top: 12px;
+  font-size: 16px;
+}
+
+#clearBtn {
+  margin-top: 12px;
+  border: none;
+  background: transparent;
+  color: #444;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+#clearBtn:hover {
+  color: #e63946;
+}
